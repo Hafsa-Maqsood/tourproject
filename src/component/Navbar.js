@@ -9,19 +9,21 @@ const Navbar = () => {
     const navStyle = {
         display: 'flex',
         justifyContent: 'space-around',
-        height: '800px',
+        alignItems: 'center', // This centers the items vertically
+        height: '100px',
         backgroundImage: currentLocation.pathname === '/' ? 'url(/image.png)' : 'none', // Use forward slashes for the path
-        backgroundSize: 'cover',
-        backgroundSize:'cover',
         fontSize: 'larger',
-        fontWeight:'bolder',
+        fontWeight: 'bolder',
+        
     };
+    
 
     return (
         <nav style={navStyle}>
             <Link to="/">Home</Link>
             <Link to="/About">About</Link>
             <Link to="/Tour">Tour</Link>
+            <Link to="/LoginRegister">LoginRegister</Link>
         </nav>
     );
 };
