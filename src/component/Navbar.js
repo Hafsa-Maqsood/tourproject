@@ -11,8 +11,9 @@ const Navbar = () => {
         justifyContent: 'space-around',
         alignItems: 'center', // This centers the items vertically
         height: '100px',
-        backgroundImage: currentLocation.pathname === '/' ? 'url(/image.png)' : 'none', // Use forward slashes for the path
-        fontSize: 'larger',
+       // backgroundImage: currentLocation.pathname === '/' ? 'url(/image.png)' : 'none', // Use forward slashes for the path
+       backgroundColor: '#afeeee',
+       fontSize: 'larger',
         fontWeight: 'bolder',
         
     };
