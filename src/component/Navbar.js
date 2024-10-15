@@ -12,7 +12,7 @@ const Navbar = () => {
         alignItems: 'center', // This centers the items vertically
         height: '100px',
        // backgroundImage: currentLocation.pathname === '/' ? 'url(/image.png)' : 'none', // Use forward slashes for the path
-       backgroundColor: '#afeeee',
+       backgroundColor: 'beige',
        fontSize: 'larger',
         fontWeight: 'bolder',
         

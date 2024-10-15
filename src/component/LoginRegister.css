@@ -1,8 +1,12 @@
+
+
+
+
 .wrapper{
     position: relative;
     width: 420px;
     height: 450px;
-    background: seagreen;
+    background: rgb(128, 118, 78);
     border-radius: 10px;
     color: #fff;
     display: flex;
@@ -12,6 +16,9 @@
     margin-top: 200px;
     margin-bottom: 200px;
     margin-left: 500px;
+
+    
+    
 }
 
 .wrapper.active{
@@ -78,6 +85,8 @@ form .input-box{
 
 .input-box input::placeholder{
     color: #fff;
+    
+
 }
 .input-box .icon{
     position: absolute;
@@ -85,6 +94,8 @@ form .input-box{
     top: 50%;
     translate: 0 -50%;
     font-size: 16px;
+ 
+     color: #030303;   
 }
 
 form .remember-forgot{

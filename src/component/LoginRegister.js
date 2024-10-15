@@ -17,7 +17,10 @@ function LoginRegister() {
 
     return (
         
+         
         <div className={`wrapper ${action}`}>
+
+            
             <div className='form-box login'>
                 <form action='' >
                     <h1>Login</h1>
@@ -34,12 +37,14 @@ function LoginRegister() {
                             <FaLock className='icon'/>
                     </div>
 
-                    <div className='remember-forgot'> 
+                   {/* <div className='remember-forgot'> 
                         <label><input type='checkbox'/>
                         Remember me</label>
                         <a href='#'>Forgot password?</a>
                         
                     </div> 
+
+                   */}
 
                     <button type='submit'>Login</button>
 
