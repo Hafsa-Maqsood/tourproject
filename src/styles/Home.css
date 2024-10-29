@@ -1,0 +1,29 @@
+.homeStyle {
+
+  background-image: url('../../images/tour-img01.jpg'); /* Your image path */
+    background-size:calc(2000px);
+  
+    background-position: center;
+    background-repeat: no-repeat;
+    height:800px; 
+    align-items: center;
+    filter: blur(-50px);    justify-content: center;
+    padding-top: 500px; /* Adjust this for vertical space */
+  /* Keeps navbar within this context */
+}
+
+
+
+
+
+h1 {
+    font-size: 50px;
+    text-align: center;
+    font-weight: bolder;
+
+   
+  
+   
+}
+
+

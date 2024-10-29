@@ -1,0 +1,15 @@
+/* Navbar.css */
+.navStyle {
+    position: absolute; /* Position navbar absolutely */
+    top: 20px; /* Adjust as needed */
+    left: 20px; /* Adjust as needed */
+    width: calc(100% - 40px); /* Adjust width to account for padding */
+    padding: 20px;
+    display: flex;
+    justify-content: space-between; /* Space items evenly */
+    align-items: center;
+    height: 60px;
+    font-size: larger; /* Size of the text */
+    font-weight: bolder; /* Text weight */
+    z-index: 10; /* Ensure it appears above other elements */
+}

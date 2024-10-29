@@ -1,0 +1,38 @@
+.testimonial-item {
+    padding: 20px;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: flex;                /* Use flexbox for layout */
+}
+
+.testimonial-info {
+    display: flex;                /* Use flex to layout image and text */
+    align-items: flex-start;      /* Align items at the top */
+    margin-top: 0;               /* Remove margin at the top */
+    text-align: left;            /* Left align text */
+}
+
+.testimonial-img {
+    width: 80px;                 /* Width of the image */
+    height: 80px;                /* Height of the image */
+    border-radius: 8px;          /* Rounded corners */
+    object-fit: cover;           /* Cover the image proportionally */
+    margin-right: 16px;          /* Space between the image and text */
+}
+
+.testimonial-text {
+    display: flex;               /* Allow stacking of name and role */
+    flex-direction: column;      /* Stack name and role vertically */
+    justify-content: center;     /* Center the text vertically */
+}
+
+.testimonial-name {
+    margin-bottom: 8px;          /* Space below the name */
+    font-weight: bold;           /* Bold font for the name */
+}
+
+/* Remove extra gap around text */
+.testimonial-item p {
+    margin: 0;                  /* Remove default margin */
+}

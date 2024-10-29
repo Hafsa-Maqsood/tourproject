@@ -1,29 +1,47 @@
 .gallery_title{
 
-    font-size: 2.3rem;
-    margin-top: 1rem;
-    margin-bottom: 2.5rem;
+  font-size: 2.3rem;
+  margin-top: 1rem;
+  margin-bottom: 2.5rem;
+  font-style: italic;
 }
 
 .hero_content h2{
-    font-size: 2.2rem;
-    font-weight: 600;
-    margin-top: 3rem;
-    margin-bottom: 2rem;
-    color: var(--heading-color);
+  font-size: 2.2rem;
+  font-weight: 600;
+  margin-top: 3rem;
+  margin-bottom: 2rem;
+  color: var(--heading-color);
 }
 
 .subtitle {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-bottom: 20px;
-  }
-  
-  .section_subtitle {
-    font-size: 28px;
-    font-weight: 700;
-    color: #ff6347; /* Change this to your desired color */
-    text-transform: uppercase;
-    letter-spacing: 2px;
-  }
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.section_subtitle {
+  font-size: 28px;
+  font-weight: 700;
+  color: #ff6347; /* Change this to your desired color */
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.masonry_img {
+  border-radius: 10px; /* Rounded corners */
+  transition: transform 0.3s ease; /* Add some hover effect */
+}
+
+.masonry_img:hover {
+  transform: scale(1.05); /* Slight zoom on hover */
+}
+
+.testimonal_title{
+  font-size: 2.3rem;
+  margin-top: 1rem;
+
+}
+
+

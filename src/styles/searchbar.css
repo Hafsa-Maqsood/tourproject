@@ -1,0 +1,62 @@
+.searchbar {
+ padding: 20px;
+ margin-left: 400px;
+  display: flex;
+  align-items: center;
+  gap: 20px; /* Adjust spacing between elements */
+}
+
+.input-group {
+  position: relative; /* Set relative positioning for the input group */
+}
+
+input {
+  padding: 8px 30px 8px 30px; /* Add padding to make space for the icon */
+  border: 2px solid #0a0605;
+  border-radius: 4px;
+  background-color: #ca7b13;
+ 
+ 
+  
+}
+input:hover
+{
+  background-color: #f05627;
+
+}
+::placeholder
+{
+  color: black;
+  font-size: larger;
+  font-weight: bolder;
+  padding-left: 5px;
+}
+.icon {
+  position: absolute;
+  left: 10px; /* Positioning the icon inside the left side */
+  top: 50%; /* Centering vertically */
+  transform: translateY(-50%); /* Adjust for perfect vertical alignment */
+  color: #571b39; /* Icon color */
+}
+
+.buttons {
+  padding: 5%;
+  background-color: #ca7b13;
+  color: black;
+  font-weight: bolder;
+  font-size: larger;
+  border: none;
+  cursor: pointer;
+  width: 100px;
+padding: 7px;
+border-radius: 17px;
+border: 2px solid rgb(106, 152, 196);
+ 
+}
+.buttons:hover {
+  background-color: brown;
+}
+
+label {
+  display: none; /* Hide labels for a cleaner look */
+}

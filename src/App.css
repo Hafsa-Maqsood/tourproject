@@ -42,4 +42,17 @@
   color: black; 
   font-size: larger;
   font-weight:bolder;
+  
+}
+.Home
+{
+  color: 'Black';
+  padding-top:300px;
+  flex-direction: 'column';
+ text-align: left;
+ 
+}
+.h1{
+font-weight: bold;
+font-size: larger;
 }
