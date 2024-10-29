@@ -1,0 +1,126 @@
+.tour-page {
+  text-align: center;
+}
+
+.tour-header {
+  height: 80vh;
+  background-size: cover;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-image: url('../assets/bg.jpg');
+  position: relative;
+}
+.tour-search {
+  margin: 20px 0 40px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.search-fields {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  background-color: white;
+  border-radius: 40px;
+  padding: 15px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.search-field {
+  display: flex;
+  flex-direction: column;
+}
+
+.search-field label {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: gray;
+}
+
+.search-field input {
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  width: 150px;
+}
+
+.search-button {
+  background-color: orange;
+  border: none;
+  padding: 10px 20px;
+  color: white;
+  font-size: 16px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.tour-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.tour-card {
+  background-color: white;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  margin: 15px;
+  width: 250px;
+  text-align: left;
+  position: relative;
+}
+
+.tour-image {
+  width: 100%;
+  height: 170px;
+  object-fit: cover;
+}
+
+.tour-info {
+  padding: 15px;
+}
+
+.tour-location {
+  font-size: 14px;
+  color: gray;
+  margin-bottom: 10px;
+}
+
+.tour-title {
+  font-size: 70px;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: white;
+}
+
+.tour-rating {
+  font-size: 14px;
+  margin-bottom: 5px;
+  color: #ffcc00;
+}
+
+.tour-price {
+  font-size: 16px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.book-now-btn {
+  background-color: orange;
+  color: white;
+  padding: 8px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+  width: 100%;
+  text-align: center;
+}
+
+.book-now-btn:hover {
+  background-color: #e69500;
+}
