@@ -13,13 +13,16 @@ import gallery12 from '../../assets/gallery12.jpg';
 import gallery13 from '../../assets/gallery13.jpg';
 import gallery14 from '../../assets/gallery14.jpg';
 import gallery15 from '../../assets/gallery15.jpg';
+import gallery16 from '../../assets/gallery16.jpg';
+import gallery17 from '../../assets/gallery17.jpg';
+import gallery18 from '../../assets/gallery18.jpg';
 const galleryImages = [
      gallery01,
      gallery02,
-     gallery03,
-     gallery04,
+     gallery09,
+     gallery17,
      gallery05,
-     gallery06,
+     gallery04,
      gallery15,
      gallery07,
      gallery08,
@@ -27,8 +30,11 @@ const galleryImages = [
      gallery12,
      gallery11,
      gallery13,
-     gallery09,
+     gallery03,
+     gallery18,
+     gallery16,
      gallery14,
+     gallery06,
      
 ];
 
