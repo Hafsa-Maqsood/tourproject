@@ -62,7 +62,10 @@ p {
      /* Center items vertically */
     padding: 20px;
     height: 600px; /* Set a height for the section */
-    color: rgb(43, 38, 38); /* Change text color for visibility */
+    /* //rgb(255, 215, 0) */
+    color: rgb(255, 127, 80); /* Change text color for visibility */
+    font-style: italic;
+    word-spacing: 5.2px;
  
 }
 
@@ -78,6 +81,8 @@ h2 {
     margin-top: 8px;
     font-size: 30px; /* Adjust size as needed */
     text-align: center;
+    
+
    
 }
 p {

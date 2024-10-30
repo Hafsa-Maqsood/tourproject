@@ -13,8 +13,10 @@ export default function End() {
         <Row>
           <Col lg='12'>
            
-            <h3 style={{ color: 'orange' , fontSize: '50px', fontStyle: 'italic' ,  marginTop: '20px'}}>Fans Love</h3>
-            <h2 className='testimonal_title'>What our say about us</h2>
+            <h3 style={{ color: 'darkyellow' , fontSize: '50px', fontStyle: 'italic' ,  marginTop: '20px'}}>Fans Love</h3>
+            <h2 className='testimonal_title' style={{ marginBottom: '20px' , fontStyle: 'italic', color: 'orange' }}>
+    What our say about us
+</h2>
           </Col>
           <Col lg='12'>
             <Testimonals />

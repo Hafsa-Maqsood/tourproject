@@ -101,8 +101,8 @@ export default function Explore() {
 
         </div>
         <div className="Services-text">
-          <h2 style={{ color: 'black' , fontSize: '40px',fontStyle: 'italic', marginTop: '20px'  }}>
-            Service
+          <h2 style={{ color: 'darkred' , fontSize: '50px',fontStyle: 'italic', marginTop: '20px'  }}>
+            Services
             </h2>
             <p>
 
