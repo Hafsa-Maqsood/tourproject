@@ -1,9 +1,11 @@
 .testimonial-item {
     padding: 20px;
-    background-color: #f9f9f9;
+    /* background-color: #f0e8e8; */
+    background-color: #e2e0e0;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;                /* Use flexbox for layout */
+    margin-bottom: 10px;
 }
 
 .testimonial-info {
@@ -14,8 +16,8 @@
 }
 
 .testimonial-img {
-    width: 80px;                 /* Width of the image */
-    height: 80px;                /* Height of the image */
+    width: 105px;                 /* Width of the image */
+    height: 105px;                /* Height of the image */
     border-radius: 8px;          /* Rounded corners */
     object-fit: cover;           /* Cover the image proportionally */
     margin-right: 16px;          /* Space between the image and text */
@@ -28,11 +30,16 @@
 }
 
 .testimonial-name {
-    margin-bottom: 8px;          /* Space below the name */
+    margin-bottom: 7px;          /* Space below the name */
     font-weight: bold;           /* Bold font for the name */
 }
 
 /* Remove extra gap around text */
 .testimonial-item p {
     margin: 0;                  /* Remove default margin */
+}
+.testimonial-name{
+    font-size: 20px;
+    margin-top: 1px;
+    color: rgb(42, 58, 58);
 }

@@ -17,8 +17,10 @@
 
 /* Header style */
 .footer-link-title {
-    font-size: 1.1rem;
+    font-size: 20px;
     font-weight: 600;
+    color: rgb(19, 19, 105);
+    margin-bottom: 10px;
 }
 
 .footer-quick-links,
@@ -31,8 +33,9 @@
 .footer-contact-info .list-group-item {
     background-color: transparent;
     padding: 0.3rem 0;
-    color: #333;
-    font-size: 0.9rem;
+    color: #333333;
+    font-size: 15px;
+    
 }
 
 .footer-quick-links .list-group-item a,
@@ -55,4 +58,9 @@
     .footer .row {
         flex-direction: column; /* Stack columns vertically */
     }
+}
+
+.logo-section{
+ height: 80px;
+ width: 100px;
 }

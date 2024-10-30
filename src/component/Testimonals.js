@@ -27,9 +27,12 @@ const Testimonals = () => {
                     <img src={ava01} className="testimonial-img" alt="John Doe" />
                     <div className="testimonial-text">
                         <h6 className="testimonial-name">Jack</h6>
-                        <p>Customer</p>
+                        
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit, explicabo provident hic distinctio molestias voluptates nobis alias placeat suscipit earum debitis recusandae voluptate illum expedita corrupti aliquid doloribus delectus?
+                        "Amazing experience from start to finish! The product quality truly exceeded my expectations,
+                         and the customer support team was incredibly helpful and responsive throughout the entire process.
+                          They answered all my questions and made me feel confident in my purchase. 
+                        I would highly recommend this company to anyone looking for quality and excellent service!"
                         </p>
                     </div>
                 </div>
@@ -40,9 +43,12 @@ const Testimonals = () => {
                     <img src={ava02} className="testimonial-img" alt="Lia Franklin" />
                     <div className="testimonial-text">
                         <h6 className="testimonial-name">Lia</h6>
-                        <p>Customer</p>
+                        {/* <p>Customer</p> */}
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit, explicabo provident hic distinctio molestias voluptates nobis alias placeat suscipit earum debitis recusandae voluptate illum expedita corrupti aliquid doloribus delectus?
+                        "I'm thrilled with my purchase and the entire experience! The team truly understands customer needs
+                         and made the whole process feel effortless. From the initial inquiry to receiving my product,
+                          every step was smooth and professional. I felt like a priority, and I can't wait to shop with them
+                           again! Their attention to detail and commitment to excellence really set them apart."
                         </p>
                     </div>
                 </div>
@@ -53,9 +59,12 @@ const Testimonals = () => {
                     <img src={ava03} className="testimonial-img" alt="Alice" />
                     <div className="testimonial-text">
                         <h6 className="testimonial-name">Jhon</h6>
-                        <p>Customer</p>
+                        {/* <p>Customer</p> */}
                         <p>
-                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Minus sit, explicabo provident hic distinctio molestias voluptates nobis alias placeat suscipit earum debitis recusandae voluptate illum expedita corrupti aliquid doloribus delectus?
+                        "Fantastic service and attention to detail! The team went out of their way to ensure I was satisfied,
+                         providing updates and support at every step. They truly value their customers, which is rare to find.
+                          I've never felt more appreciated, and I'll definitely recommend them to everyone I know! 
+                          This experience has set a new standard for what customer service should be."
                         </p>
                     </div>
                 </div>
