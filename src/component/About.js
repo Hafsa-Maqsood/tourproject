@@ -13,7 +13,7 @@ export default function About() {
   return (
     <>
 
-         =
+         
       {/* =============================  GALLERY SECTION START ============================= */}
 
       <section>
