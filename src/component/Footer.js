@@ -28,7 +28,7 @@ export default function Footer() {
                     {/* Column 1 */}
                     <Col className='footer-column'>
                         <div className='logo-section'>
-                            <img src='https://media2.giphy.com/media/Xj2Pi6OTwEOztIeTOZ/200w.gif' alt='Logo' />
+                            <img src='https://media.istockphoto.com/id/1258141375/vector/plane-travel-icon-air-travel-around-the-world-flying-around-the-world-travel-agency-logo.jpg?s=612x612&w=0&k=20&c=QaZk5NDYsdfKd_7iUNAe3CImkcwlzyaibpMuYIteeWY=' alt='Logo' />
                         </div>
                     </Col>
 

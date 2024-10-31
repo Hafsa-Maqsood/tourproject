@@ -1,3 +1,10 @@
+
+
+body {
+    overflow-x: hidden; /* to remove scroll bar in last of page */
+}
+
+
 .footer {
     flex: 1;
     padding: 2rem 0;
@@ -13,11 +20,13 @@
 .footer-column {
     flex: 1; /* Allow columns to grow equally */
     padding: 1rem; /* Padding inside each column */
+    margin-top: 10px;
+    
 }
 
 /* Header style */
 .footer-link-title {
-    font-size: 20px;
+    font-size: 22px;
     font-weight: 600;
     color: rgb(19, 19, 105);
     margin-bottom: 10px;
@@ -25,6 +34,7 @@
 
 .footer-quick-links,
 .footer-contact-info {
+    margin-top: 30px;
     list-style: none;
     padding: 0; /* Remove default padding */
 }
@@ -51,6 +61,7 @@
 
 @media (max-width: 768px) {
     .footer-column {
+        
         text-align: center; /* Center text on small screens */
         margin-bottom: 1rem; /* Space between stacked columns */
     }
@@ -60,3 +71,8 @@
     }
 }
 
+.logo-section img {
+    width: 250px; /* Set desired width */
+    height: 200px; /* Maintain aspect ratio */
+    margin-bottom: 0px;
+}

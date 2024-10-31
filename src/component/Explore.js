@@ -107,13 +107,13 @@ export default function Explore() {
             <p>
 
 
-              We offer professional and customer-oriented consultation for hassle-free travel experiences. 
-              With convenient email capabilities, they ensure prompt booking and information for their clients.
-              Their creative and persistent approach allows them to find the most suitable travel arrangements
-              at the best value. Their friendly and experienced travel consultants cater to both seasoned
-              and new travelers, providing exceptional service. With a strong focus on customer satisfaction,
-              they enjoy a high percentage of repeat bookings and benefit from positive word-of-mouth recommendations.
-              Pakistan Travel & Tours is dedicated to ensuring a seamless and enjoyable travel journey for their clients.
+              We  offer  professional  and  customer-oriented  consultation  for  hassle-free  travel  experiences.  
+              With  convenient  email  capabilities,  they  ensure  prompt  booking  and  information  for  their  clients. 
+              Their  creative  and  persistent  approach  allows  them  to  find  the  most  suitable  travel  arrangements 
+              at  the  best  value.  Their  friendly  and  experienced  travel  consultants  cater  to  both  seasoned 
+              and  new  travelers,  providing  exceptional  service.  With  a  strong  focus  on  customer  satisfaction, 
+              they  enjoy  a  high  percentage  of  repeat  bookings  and  benefit  from  positive  word-of-mouth  recommendations. 
+              Pakistan  Travel  &  Tours  is  dedicated  to  ensuring  a  seamless  and  enjoyable  travel  journey  for  their  clients. 
             </p>
 
   {/* Dynamic sections */}

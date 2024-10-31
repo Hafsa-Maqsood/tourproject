@@ -1,4 +1,6 @@
 .wrapper {
+
+
     width: 420px;
     height: auto; /* Adjust height automatically */
     background: rgb(128, 118, 78);
@@ -11,6 +13,8 @@
 }
 
 .form-box {
+
+    
     width: 100%;
     padding: 40px;
     justify-content: center;
@@ -83,3 +87,5 @@ button:hover {
 .register-link a:hover {
     text-decoration: underline;
 }
+
+

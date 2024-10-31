@@ -41,7 +41,7 @@ p {
     display: flex;
     justify-content: space-around;
     padding: 20px;
-    margin-top: 50px;
+    margin-top: 30px;
     background-color: #f9f9f9;
 }
 
@@ -61,11 +61,12 @@ p {
     /* align-items: center; */
      /* Center items vertically */
     padding: 20px;
-    height: 600px; /* Set a height for the section */
+    height: 560px; /* Set a height for the section */
     /* //rgb(255, 215, 0) */
     color: rgb(255, 127, 80); /* Change text color for visibility */
-    font-style: italic;
-    word-spacing: 5.2px;
+    /* font-style: italic; */
+    /* word-spacing: 1px; */
+    font-family: 'Your Font Family', sans-serif;
  
 }
 
@@ -90,5 +91,8 @@ p {
     font-size: 15px; /* Adjust size as needed */
     color: black;
     font-weight: bold;
-    
+    font-family: 'Your Font Family', sans-serif;
+    /* word-spacing: 1px; */
+    line-height: 1.4;
+
 }
