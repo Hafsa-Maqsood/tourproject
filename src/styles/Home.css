@@ -1,0 +1,83 @@
+.home-container {
+    padding: 150px; /* Add padding to the container */
+  }
+  
+  .header {
+    display: flex; /* Use flexbox for horizontal alignment */
+  /* Space between text and images */
+    align-items: center; /* Center items vertically */
+    margin-bottom: 20px; /* Space below header */
+  }
+  
+  .header-text {
+    max-width: 100%;
+   color:black;
+    margin-left: -30px; /* Limit the width of the text section */
+  }
+  
+  .header-text h1{
+    max-width: 100%;
+   color: #db721b;
+    margin-left: -20px; /* Limit the width of the text section */
+  }
+  .tour-images {
+    display: flex; /* Align images in a row */
+    gap: 2px;
+    margin-left: 50px;
+  }
+  
+  .tour-images img {
+    max-width: 100%; /* Ensure images are responsive */
+    height: 500px; /* Maintain aspect ratio */
+    width: 300px; /* Set a fixed width for images */
+  }
+  
+  .search-section {
+    display: flex;
+    flex-direction: row; /* Stack inputs vertically */
+    align-items: center; /* Center align inputs */
+    margin-top: 40px; /* Add some space above */
+    margin-left: 350px;
+  border: 2px solid rgb(243, 231, 231);
+  background-color: #fafcfd;
+border-radius: 20px;
+width: 850px;}
+  
+  .input-wrapper {
+    position: relative; /* Position relative for absolute child */
+    margin-bottom: 10px; /* Space between input fields */
+    margin-top:20px ;
+  margin-left: 20px; }
+  
+  .input-wrapper i {
+    position: absolute; /* Position icon within the input */
+    left: 10px; /* Position from the left */
+    top: 50%; /* Center vertically */
+    transform: translateY(-50%); /* Adjust vertical alignment */
+    color: #fa8954; /* Icon color */
+  }
+  
+  .input-wrapper input {
+    padding-left: 30px; /* Space for the icon */
+    height: 35px; /* Set height for the input */
+    width: 200px; /* Adjust width as needed */
+    border: 1px solid #ccc; /* Border style */
+    border-radius: 5px; /* Rounded corners */
+  }
+  button {
+    background-color: #db721b; /* Change button color for better visibility */
+    border: none; /* Remove border */
+    color: white; /* Text color */
+    padding: 20px; /* Adjust padding for better size */
+    height: 40px; /* Set height */
+    border-radius: 15px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    font-size: 16px; /* Adjust font size */
+    display: flex; /* Center content */
+    align-items: center; /* Center vertically */
+    margin-left: 5px; /* Space between inputs and button */
+   }
+
+button i {
+    margin-right: 5px; /* Space between icon and text */
+}
