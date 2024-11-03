@@ -4,7 +4,14 @@ import Services from './Services';
 import image1 from '../assets/hero-img01.jpg';
 import image2 from '../assets/hero-img02.jpg';
 import image3 from '../assets/hero-img01.jpg';
+import TourHome from './TourHome';
+import About from './About';
+import Experience from './Experience'
+import Footer from './Footer';
+import Subscription from './Subscribtion'
+import { FaSearch } from 'react-icons/fa'; // Import FaSearch
 import '@fortawesome/fontawesome-free/css/all.min.css';
+
 
 function Home() {
   return (
@@ -22,24 +29,26 @@ function Home() {
         </div>
       </header>
 
-      <div className="search-section">
-        <div className="input-wrapper">
-          <i className="fas fa-map-marker-alt"></i>
-          <input type="text" placeholder="Location" />
-        </div>
-        <div className="input-wrapper">
-          <i className="fas fa-road"></i>
-          <input type="text" placeholder="Distance (km)" />
-        </div>
-        <div className="input-wrapper">
-          <i className="fas fa-users"></i>
-          <input type="number" placeholder="Max People" />
-        </div>
-        <button>
-          <i className="fas fa-search"></i> 
+    {/* Search Bar Section */}
+    <div className="tour-search">
+      <div className="search-fields">
+        {['Location', 'Distance', 'Min People'].map((label, index) => (
+          <div className="search-field" key={index}>
+            <label>{label}</label>
+            <input type={label === 'Distance' || label === 'Min People' ? 'number' : 'text'} placeholder={label === 'Location' ? 'Where are you going?' : label === 'Distance' ? 'Distance (km)' : '1'} />
+          </div>
+        ))}
+        <button className="search-button">
+          <FaSearch />
         </button>
       </div>
+    </div>
       <Services/>
+      <TourHome/>
+      <Experience/>
+      <About/>
+|<Subscription/>
+      <Footer/>
     </div>
   );
 }

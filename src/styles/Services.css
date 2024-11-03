@@ -4,13 +4,13 @@
     padding: 40px; /* Add some padding */
    /* Light background for contrast */
     text-align: center; /* Center text */
-    width: 1500px;
-    margin-left: 0px;
+    
+    margin-left: 120px;
 }
 
 .service-cards {
     height: 200px;
-    margin-left: 20px;
+    margin-left: 80px;
     display: flex; /* Use flexbox for layout */
     justify-content: center; /* Center items */
     gap: 20px; /* Space between cards */
