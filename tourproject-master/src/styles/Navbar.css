@@ -1,0 +1,74 @@
+.navStyle {
+    width: auto;
+    top: 0px; 
+    padding: 10px 20px; 
+    display: flex;
+    align-items: center;
+    height: 60px;
+    z-index: 10; 
+    justify-content: space-between; 
+    background-color: white; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); 
+}
+
+.navStyle .logo {
+    display: flex; 
+    align-items: center; 
+    margin-left: 170px;
+}
+
+.navStyle img {
+    height: 40px; 
+    width: auto; 
+}
+
+.navStyle .nav-links {
+    display: flex; 
+    align-items: center; 
+}
+
+.navStyle a {
+    color: #000;
+    text-decoration: none;
+    font-size: larger; 
+    font-weight: bolder; 
+    margin: 0 85px; /* Adjust space between links */
+}
+
+.navStyle a:hover {
+    color: #d6661b;
+}
+
+/* Button Styles */
+.register-button {
+    background-color: #e67e39; /* Background color */
+    border: 2px solid #d6661b; /* Border color */
+    color: black;/* Text color */
+    font-weight: bold;
+    margin-top: 10px;
+    padding: 15px; /* Padding for the button */
+    border-radius: 5px; /* Rounded corners */
+    cursor: pointer; /* Pointer on hover */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Transition effect */
+}
+
+.register-button:hover {
+    background-color: #d6661b; /* Background on hover */
+    color: white; /* Text color on hover */
+}
+
+/* Media Query for Smaller Screens */
+@media (max-width: 768px) {
+    .navStyle {
+        flex-direction: column; 
+        align-items: flex-start; 
+        padding: 10px; 
+    }
+    .navStyle .nav-links {
+        flex-direction: column; 
+        width: 100%; 
+    }
+    .navStyle a {
+        margin: 5px 0; 
+    }
+}
