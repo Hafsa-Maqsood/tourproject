@@ -18,7 +18,7 @@ export default function About() {
             <Col lg='12'>
               <div className='hero_content'>
                
-                <h3 style={{ color: 'darkblue' , fontSize: '50px',fontStyle: 'italic', marginTop: '50px'  }}>Gallery</h3>
+                <h3 style={{ color: 'darkblue' , fontSize: '50px',fontStyle: 'italic', marginTop: '50px' }}>Gallery</h3>
               </div>
               <h2 className="gallery_title">
                 Visit our customers tour gallery

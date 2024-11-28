@@ -1,0 +1,457 @@
+.tour__content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 2rem;
+  margin-left: 2%;
+}
+
+.tour__content img {
+  width: 50%; /* Make the image fully responsive */
+  max-width: 800px; /* Optional: Set a max width */
+  height: auto; /* Maintain aspect ratio */
+  border-radius: 0.5rem; /* Add slight rounding to corners */
+}
+
+.tour__info,
+.tour__reviews {
+  width: 45.9%;
+  margin-top: 10px; /* Adjust overlap for better alignment */
+  margin-bottom: 2rem;
+  border-radius: 0.5rem;
+  padding: 1.5rem;
+  background-color: rgba(255, 255, 255, 0.85); /* Slightly opaque white background */
+  border: 1px solid #ddd; /* Subtle border */
+  position: relative;
+  z-index: 1; /* Ensure this content is above the image */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Add subtle shadow */
+}
+
+.tour__info h2 {
+  
+ margin-right: 20%;
+  font-size: 2rem; /* Increased font size for better visibility */
+  margin-bottom: 1rem;
+  margin-top: -20px; /* Adjust spacing from the top */
+  color: #333; /* Ensure a readable text color */
+}
+
+.tour__info span {
+ 
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  color: #555; /* Muted text color */
+  font-size: 1.1rem;
+}
+
+.tour__info span i {
+  color: #ff9800; /* Accent color for icons (e.g., star rating) */
+  font-size: 1.2rem;
+  margin-left: -5px;
+ 
+  
+}
+
+.tour__extra-details {
+ 
+  display: flex;
+  align-items: center;
+  gap: 2rem;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+
+.tour__info h5 {
+  margin-right: 100%;
+  font-size: 1rem;
+  color: #666; /* Subtle color for secondary text */
+}
+.tour__info p{
+  margin-top: -15px;
+  margin-right: 75%;
+}
+
+.address {
+  margin-left: 150px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  color: #555; /* Consistent muted color */
+}
+
+.rating__group {
+  margin-right: 100%;
+  display: flex; /* Set flexbox for horizontal alignment */
+  align-items: center; /* Align items vertically in the center */
+  gap: 0.5rem; /* Add spacing between the stars */
+}
+
+.rating__group span {
+ 
+  font-size: 1.2rem; /* Adjust the star size */
+  color: #ff9800; /* Star color */
+  cursor: pointer; /* Change the cursor to a pointer for interactivity */
+  display: inline-flex; /* Ensure inline layout for each star */
+}
+
+
+.review__input input {
+   width: 50%;;
+ 
+  border: none;
+  padding: 0.5rem;
+  border-radius: 1rem;
+}
+ h4{
+  margin-right: 75%;
+}
+.review__input input:focus {
+  outline: none;
+  box-shadow: 0 0 5px #ff9800; /* Add glowing effect on focus */
+}
+
+.review__input button {
+  background-color: #ff9800; /* Orange background */
+  color: white; /* White text */
+  padding: 0.3rem 0.8rem; /* Smaller padding */
+  font-size: 0.9rem; /* Smaller font size */
+  border: none; /* Remove default border */
+  border-radius: 1rem; /* Rounded corners */
+  cursor: pointer; /* Pointer cursor */
+}
+
+.review__input button:hover {
+  background-color: #e68a00; /* Slightly darker orange on hover */
+}
+
+.review__input {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  padding: 0.5rem; /* Reduced padding for the input area */
+  border-radius: 1.5rem;
+  border: 1px solid #ff9800;
+  background-color: #fff;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.review__input button
+{
+  margin-top: 5px;
+  width: 20%;
+}
+.review__input button:hover {
+  background-color: #e68a00; /* Slightly darker hover effect */
+}
+
+.user_reviews {
+  margin-left: -3%;
+  width: 49%;
+  display: flex;
+  flex-direction: column;
+  row-gap: 2rem; /* Space between review items */
+  margin-top: 1rem;
+}
+
+.review_item {
+
+
+  display: flex;
+  align-items: flex-start; /* Align image and text to the top */
+  column-gap: 1rem; /* Space between profile image and content */
+  padding: 1rem;
+  border: 1px solid #f0f0f0; /* Optional: subtle border around review */
+  border-radius: 8px; /* Rounded corners */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for elevation */
+ 
+}
+
+.review_item img {
+  
+  width: 3.5rem; /* Profile image size */
+  height: 3.5rem;
+  border-radius: 50%; /* Circular image */
+  object-fit: cover; /* Ensure image fits the shape */
+}
+
+.review_item .w-100 {
+  display: flex;
+  flex-direction: column; /* Stack content vertically */
+}
+
+.review_item h5 {
+  font-size: 1.1rem; /* Reviewer name font size */
+  font-weight: bold; /* Highlight name */
+  margin: 0; /* Remove default margin */
+}
+.rating{
+  margin-left: 300%;
+}
+
+.review_item p {
+
+  font-size: 0.85rem; /* Date font size */
+  color: #777; /* Muted color for date text */
+  margin: 0.2rem 0; /* Add spacing below date */
+  margin-left: -10%;}
+
+
+.review_item span {
+
+  font-size: 1rem; /* Rating font size */
+  font-weight: bold; /* Emphasize rating */
+  color: #f39c12; /* Gold color for rating stars */
+  display: flex;
+  
+  gap: 0.2rem; /* Space between number and star icon */
+}
+
+.review_item h6 {
+  
+  font-size: 1rem; /* Comment font size */
+  margin: 0.5rem 0 0; /* Add spacing above comment */
+  font-weight: normal;
+  margin-left: -40%;
+  line-height: 1.4; /* Improve readability */
+}
+
+.d-flex.align-items-center.justify-content-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.d-flex.align-items-center {
+  display: flex;
+  align-items: center;
+}
+.book {
+  position: absolute; /* Absolute positioning to place it on top of the image */
+  top: 15%; /* Adjust this value to fine-tune the vertical positioning */
+  right: 2%; /* Adjust the right position to place it appropriately */
+  z-index: 10; /* Ensure it's placed above other content */
+  background-color: rgba(255, 255, 255, 0.8); /* Optional: add a semi-transparent background */
+  padding: 1rem;
+ 
+  border-radius: 0.5rem;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Optional: add a subtle shadow */
+}
+
+/* Adjustments for smaller screens */
+@media (max-width: 1200px) {
+  .book {
+    top: 25%; /* Adjusted vertical positioning for larger screens */
+    right: 5%; /* Adjusted right positioning */
+  }
+}
+
+@media (max-width: 992px) {
+  .book {
+    top: 30%; /* Adjusted vertical positioning for medium screens */
+    right: 5%; /* Adjusted right positioning */
+  }
+}
+
+@media (max-width: 768px) {
+  .book {
+    top: 35%; /* Adjusted vertical positioning for small screens */
+    right: 3%; /* Adjusted right positioning */
+    left: 50%; /* Center horizontally for smaller screens */
+    transform: translateX(50%); /* Center the book section horizontally */
+  }
+}
+
+@media (max-width: 576px) {
+  .book {
+    top: 40%; /* Adjusted vertical positioning for extra small screens */
+    right: 2%; /* Adjusted right positioning */
+    left: 50%; /* Center horizontally for very small screens */
+    transform: translateX(50%); /* Center the book section horizontally */
+  }
+}
+/* Responsive Adjustments */
+@media (max-width: 1200px) {
+  .tour__content {
+    margin-left: 1%;
+  }
+
+  .tour__content img {
+    width: 70%;
+  }
+
+  .tour__info,
+  .tour__reviews {
+    width: 60%;
+    padding: 1rem;
+  }
+
+  .tour__info h2 {
+    font-size: 1.8rem;
+    margin-right: 30%;
+  }
+
+  .rating__group {
+    margin-right: 80%;
+  }
+
+  .review__input input {
+    width: 70%;
+  }
+
+  .review__input button {
+    width: 25%;
+  }
+
+  .user_reviews {
+    width: 70%;
+  }
+
+  .review_item h6 {
+    margin-left: -30%;
+  }
+}
+
+@media (max-width: 992px) {
+  .tour__content {
+    margin-left: 0;
+  }
+
+  .tour__content img {
+    width: 80%;
+  }
+
+  .tour__info,
+  .tour__reviews {
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tour__info h2 {
+    font-size: 1.6rem;
+    margin-right: 20%;
+  }
+
+  .rating__group {
+    margin-right: 70%;
+  }
+
+  .review__input input {
+    width: 80%;
+  }
+
+  .review__input button {
+    width: 30%;
+  }
+
+  .user_reviews {
+    width: 80%;
+    row-gap: 1.5rem;
+  }
+
+  .review_item h6 {
+    margin-left: -20%;
+  }
+}
+
+@media (max-width: 768px) {
+  .tour__content {
+    align-items: center;
+    margin-left: 0;
+  }
+
+  .tour__content img {
+    width: 100%;
+  }
+
+  .tour__info,
+  .tour__reviews {
+    width: 100%;
+    padding: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .tour__info h2 {
+    font-size: 1.5rem;
+    margin-right: 0;
+    text-align: center;
+  }
+
+  .rating__group {
+    margin-right: 0;
+    justify-content: center;
+  }
+
+  .review__input {
+    flex-direction: column;
+    align-items: stretch;
+    gap: 1rem;
+  }
+
+  .review__input input {
+    width: 100%;
+  }
+
+  .review__input button {
+    width: 100%;
+  }
+
+  .user_reviews {
+    width: 100%;
+    row-gap: 1rem;
+  }
+
+  .review_item {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+
+  .review_item h6 {
+    margin-left: 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .tour__content img {
+    width: 100%;
+  }
+
+  .tour__info,
+  .tour__reviews {
+    padding: 0.5rem;
+  }
+
+  .tour__info h2 {
+    font-size: 1.3rem;
+  }
+
+  .rating__group {
+    font-size: 1rem;
+  }
+
+  .review__input input {
+    padding: 0.5rem;
+  }
+
+  .review__input button {
+    padding: 0.4rem;
+  }
+
+  .review_item img {
+    width: 3rem;
+    height: 3rem;
+  }
+
+  .review_item h5 {
+    font-size: 1rem;
+  }
+
+  .review_item h6 {
+    font-size: 0.9rem;
+  }
+}

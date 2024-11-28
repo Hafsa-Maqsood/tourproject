@@ -3,7 +3,7 @@ import '../styles/footer.css';
 import { Container, Row, Col, ListGroup, ListGroupItem } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import 'remixicon/fonts/remixicon.css';
-import Subscription from './Subscribtion';
+
 
 export default function Footer() {
     const discoverLinks = [

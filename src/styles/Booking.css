@@ -1,0 +1,287 @@
+/* Base styling for booking container */
+.booking {
+    padding: 2rem;
+    border-radius: 0.5rem;
+    border: 1px solid white;
+    position: sticky;
+    top: 80px;
+    background-color: #fff;
+    width: 100%;
+    max-width: 400px;
+   margin-right: 0px;
+  
+
+   
+}
+
+.booking__top {
+    display: flex;
+    align-items: center; /* Align items vertically */
+    justify-content: space-between; /* Space out price and rating */
+    padding-top: 1rem; /* Adjust padding as needed */
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.booking__top h3 {
+    font-size: 2rem;
+    font-weight: 700;
+    margin: 0; /* Remove excess margin */
+}
+
+.booking__top h3 span {
+    font-size: 1.1rem;
+    font-weight: 400;
+    color: var(--text-color);
+}
+
+.tour_rating {
+    display: flex;
+    align-items: center; /* Align the star icon and text */
+    gap: 5px; /* Space between the star icon and rating text */
+    font-size: 1rem;
+    font-weight: 500;
+    color: var(--text-color);
+}
+
+.tour_rating i {
+   margin-right: -10%;
+    color: #ff7a00; /* Star icon color */
+    font-size: 1.2rem; /* Adjust icon size */
+}
+
+
+/* Form Styling */
+.booking__form {
+    padding-top: 2rem;
+    background-color: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+    margin-bottom: 2rem;
+}
+
+.booking__form h5 {
+    font-size: 1.3rem;
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 1.5rem;
+   margin-right: 70%;
+}
+.total h5,.total span{
+    color: var(--heading-color)!important;
+    font-weight: 700 !important;
+    font-size: 1.1rem !important;
+}
+
+/* Input Fields */
+.booking__form input {
+    width: 90%;
+    margin-right: 20px;
+    padding: 12px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    background-color: #fff;
+    transition: border-color 0.3s ease;
+}
+
+.booking__form input:focus {
+    outline: none;
+    border-color: #ff7a00;
+    box-shadow: 0 0 4px rgba(255, 122, 0, 0.5);
+}
+
+.booking__form input::placeholder {
+    color: #777;
+}
+
+.booking__info-form {
+    padding: 1rem;
+}
+
+/* Flexbox layout for input fields */
+.booking__form .d-flex {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.booking__form .d-flex input {
+    flex: 1;
+    padding: 12px 16px;
+    border-radius: 10px;
+    border: 1px solid #ccc;
+    font-size: 1rem;
+    margin-bottom: 15px;
+}
+
+.booking__form .d-flex input:focus {
+    outline: none;
+    border-color: #ff7a00;
+    box-shadow: 0 0 4px rgba(255, 122, 0, 0.5);
+}
+
+/* Bottom part with service charges and total */
+.booking__bottom {
+    width: 100%;
+    
+    padding-top: 2rem;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+.booking__bottom li{
+    margin-left: 5px;
+    margin-right: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.booking__bottom li h5, .booking__bottom li span{
+    font-size: 1rem;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.booking__bottom .border-0 {
+    padding: 10px 0;
+}
+
+.booking__bottom h5 {
+    font-size: 1.1rem;
+    color: #333;
+    font-weight: 600;
+}
+
+.booking__bottom span {
+    font-size: 1rem;
+    color: #777;
+    font-weight: 400;
+}
+
+.booking__bottom .total {
+    background-color: #f9f9f9;
+    font-weight: 700;
+}
+
+/* Button Styling */
+.booking__bottom Button {
+    background-color: #ff7a00;
+    border: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 1rem;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.3s;
+}
+
+.booking__bottom Button:hover {
+    background-color: #e86c00;
+}
+
+/* Rating Icon Color */
+.booking__top .tour_rating i {
+    color: #ff7a00;
+}
+
+/* RESPONSIVE STYLES */
+
+/* Large Screen (Desktop) */
+@media (min-width: 1024px) {
+    .booking {
+        max-width: 500px;
+        padding: 2.5rem;
+    }
+
+    .booking__top h3 {
+        font-size: 2.4rem;
+    }
+
+    .booking__form input {
+        font-size: 1.1rem;
+        padding: 14px 18px;
+    }
+
+    .booking__bottom Button {
+        font-size: 1.4rem;
+        padding: 1.2rem;
+        
+    }
+}
+
+/* Tablet Screen (up to 768px) */
+@media (max-width: 768px) {
+    .booking {
+        max-width: 100%;
+        padding: 1.5rem;
+    }
+
+    .booking__top h3 {
+        font-size: 1.8rem;
+    }
+
+    .booking__top h3 span {
+        font-size: 1rem;
+    }
+
+    .booking__form h5 {
+        font-size: 1.2rem;
+    }
+
+    .booking__form input {
+        padding: 10px 14px;
+        font-size: 1rem;
+    }
+
+    .booking__form .d-flex input {
+        padding: 10px 14px;
+        font-size: 1rem;
+    }
+
+    .booking__bottom Button {
+        font-size: 1rem;
+        padding: 1rem;
+       
+       
+    }
+    
+}
+
+/* Small Screen (Mobile up to 480px) */
+@media (max-width: 480px) {
+    .booking {
+        padding: 1rem;
+        
+        max-width: 100%;
+    }
+
+    .booking__top h3 {
+        font-size: 1.4rem;
+    }
+
+    .booking__top h3 span {
+        font-size: 0.9rem;
+    }
+
+    .booking__form h5 {
+        font-size: 1.1rem;
+    }
+
+    .booking__form input {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .booking__form .d-flex input {
+        padding: 8px 12px;
+        font-size: 0.9rem;
+    }
+
+    .booking__bottom Button {
+        font-size: 1rem;
+        
+        padding: 1rem;
+    }
+
+}

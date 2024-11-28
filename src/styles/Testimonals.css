@@ -1,10 +1,11 @@
 .testimonial-item {
-    padding: 20px;
+
+    padding: 10px;
     background-color: #f0e8e8;
     border-radius: 8px;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     display: flex;  
-    width: auto;
+    width: 100%;
    
 }
 
@@ -41,5 +42,5 @@
     margin: 0;                  /* Remove default margin */
 }
 .testimonial-name{
-    font-size: 20px;
+    font-size: 10px;
 }

@@ -1,0 +1,94 @@
+/* Main container for the search bar */
+.tour-search {
+  display: flex;
+  align-items: center;          /* Center content vertically */
+  justify-content: space-between; /* Distribute fields evenly */
+  background-color: #fff;
+  border-radius: 40px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 5px 10px;            /* Compact padding */
+  gap: 5px;                     /* Reduced gap between fields and button */
+  width: 40%;                   /* Restrict to 40% width */
+  margin-left: 50px;            /* Align to the left with some margin */
+   margin-top: -60px;}
+
+/* Individual search field styling */
+.search-field {
+  display: flex;
+  align-items: center;
+  background-color: #f8f8f8;    /* Light grey background */
+  border-radius: 20px;
+  padding: 8px 10px;             /* Smaller padding */
+  flex: 1;                      /* All fields share equal width */
+  gap: 10px;                    /* Space between icon and text */
+  border: 1px solid #ddd;      /* Subtle border */
+  max-width: 500px;  
+         /* Limit width per field */
+}
+
+/* Text and input layout inside fields */
+.field-text {
+  
+  display: flex;
+  flex-direction: column;
+}
+
+.field-text label {
+  margin-left: -50px; 
+  font-size: 10px;             /* Smaller label size */
+  color: #666;
+  margin-bottom: 2px;
+}
+
+.field-text input {
+  border: none;
+  outline: none;
+  font-size: 12px;             /* Smaller input size */
+  color: #333;
+  background: transparent;
+  padding: 0;
+  width: 100%;
+}
+
+/* Icons inside fields */
+.icon {
+  color: #fa8954;              /* Orange icon color */
+  font-size: 20px;              /* Slightly smaller icon */
+}
+
+/* Search button styling */
+.search-button {
+  background-color: #fa8954;
+  color: white;
+  border-radius: 30%;          /* Circular button */
+  width: 40px;                 /* Reduced button size */
+  height: 40px;
+  display: flex;
+  align-items: center;         /* Ensure button is centered vertically */
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  padding: 0;                  /* Remove extra padding */
+  margin-left: 5px;            /* Add a small margin to the left of the button */
+  vertical-align: middle; 
+  margin-top: 5px;
+}
+
+/* Hover effect for search button */
+.search-button:hover {
+  background-color: #e07b44;
+}
+
+/* Responsive design for smaller screens */
+@media (max-width: 768px) {
+  .tour-search {
+    width: 80%;                /* Use more width for smaller screens */
+    flex-wrap: wrap;
+    gap: 10px;                 /* Adjust spacing for wrapping */
+    margin-left: 20px;         /* Reduce margin for smaller screens */
+  }
+
+  .search-field {
+    flex: 1 1 100%;            /* Full width for smaller screens */
+  }
+}

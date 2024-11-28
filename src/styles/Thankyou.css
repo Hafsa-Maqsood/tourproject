@@ -1,0 +1,41 @@
+.thank__you span i{
+    font-size: 4rem;
+    color: green;
+
+}
+.thank__you h1{
+   color: black;
+    font-size: 3rem;
+    font-family: var(--subtitle-font);
+    margin-top: 5px;
+}
+.thank__you Button {
+    background-color: rgb(231, 139, 72);
+    width: 15%;
+    text-decoration: none; /* Removes underline */
+    color: white; /* Ensure text is visible */
+    font-size: 1rem; /* Adjust font size if needed */
+    border: none; /* Remove border if not needed */
+    cursor: pointer; /* Makes it clear the element is clickable */
+}
+
+.thank__you Button:hover {
+    text-decoration: none; /* Prevent underline on hover */
+}
+
+.thank__you h6{
+   
+    color: beige;
+    font-weight: bolder;
+    font-size: 20px;
+    margin-top: 10px;
+}
+.thank__you Button a {
+    text-decoration: none; /* Removes underline */
+    color: inherit; /* Ensures the text inherits the button's color */
+    display: inline-block; /* Makes it behave more like a button */
+}
+
+.thank__you Button a:hover {
+    text-decoration: none; /* Prevent underline on hover */
+}
