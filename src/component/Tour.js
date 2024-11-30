@@ -1,14 +1,11 @@
 import React, { useEffect, useState } from "react";
 import CommonSection from "./Section";  
 import Search from "./Search";  
-
 import TourCard from "./TourCard";  
 import tours from "../assets/data/tours";  
-import '../styles/Tour.css';
-
 import Footer from "./Footer";  
 import { Container, Row, Col } from "reactstrap";
-
+import '../styles/Tour.css';
 
 const Tour = () => {
   const itemsPerPage = 4;  // Number of tours per page

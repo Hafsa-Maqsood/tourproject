@@ -1,209 +1,110 @@
-/* Wrapper: Center the whole content */
-.wrapper {
-    width: 50%; /* Flexible width */
-    height: 100%;
-    margin: 50px auto;
+body {
+    margin: 0;
+    font-family: "Arial", sans-serif;
+    background-color: #f9f9f9;
+  }
+  
+  .login-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #ffffff;
+  }
+  
+  .login-container {
+    display: flex;
+    width: 80%;
+    max-width: 1200px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
     border-radius: 10px;
-    color: #fff;
+    overflow: hidden;
+  }
+  
+  .image-section {
+    flex: 1;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    padding: 20px;
-}
-
-/* Content Container: Flexbox Layout */
-.content-container {
-    display: flex; /* Side-by-side layout */
-    width: 100%; /* Ensure full width of container */
-    height: 100%;
-    flex-direction: row; /* Default: horizontal alignment */
-    gap: 20px; /* Spacing between form and image */
-}
-
-/* Form Box: Takes half the width */
-.form-box {
-    flex: 1; /* Use available space proportionally */
-    background: #fd9d3e; /* Light orange background */
-    color: #000;
-    padding: 40px; /* Inner padding for content */
-    border-radius: 10px; /* Rounded corners */
-    display: flex; /* Use Flexbox for alignment */
-    flex-direction: column; /* Stack elements vertically */
-    justify-content: center; /* Center content vertically */
-    align-items: center; /* Center content horizontally */
-    min-height: 400px; /* Ensures a minimum height */
-    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Slight shadow for depth */
-}
-
-/* Image Box: Takes half the width */
-.image-box {
-    flex: 1; /* Use half the available space */
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.image-box img {
-    width: 100%; /* Fill the container */
-    max-width: 500px; /* Limit the image size */
+    background-color: #f6f6f6;
+  }
+  
+  .image-section img {
+    width: 90%;
+    max-width: 400px;
     height: auto;
-    border-radius: 10px;
-    object-fit: cover; /* Ensure proportional scaling */
-}
-
-/* Form Styles */
-h1 {
-    font-size: 36px;
-    text-align: center;
-    margin-bottom: 20px;
-}
-
-.input-box {
-    position: relative;
-    margin: 20px 0;
-    width: 100%;
-}
-
-.input-box input {
-    width: 100%;
-    height: 40px;
-    background: white;
-    border: 2px solid rgba(0, 0, 0, 0.1);
-    padding: 0 10px;
-    font-size: 16px;
-    color: #000;
-}
-
-.input-box .icon {
-    position: absolute;
-    right: 15px;
-    top: 50%;
-    transform: translateY(-50%);
-    font-size: 16px;
-    color: #333;
-}
-
-button {
-    width: 100%;
-    height: 45px;
-    background: black;
-    border: none;
-    border-radius: 40px;
-    cursor: pointer;
-    font-size: 15px;
+  }
+  
+  .form-section {
+    flex: 1;
+    background-color: #fd9d3e;
     color: #fff;
-    font-weight: 700;
-    margin-top: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
     justify-content: center;
-    transition: background 0.3s;
-}
-
-button:hover {
-    background: #e67e22;
-}
-
-.register-link {
+    align-items: center;
+  }
+  
+  .form-section h2 {
+    font-size: 28px;
+    margin-bottom: 20px;
     text-align: center;
+  }
+  
+  .form-section form {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    max-width: 300px;
+  }
+  
+  .form-section input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  .form-section button {
+    background-color: #000;
+    color: #fff;
+    padding: 10px;
+    font-size: 16px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
     margin-top: 10px;
-}
-
-.register-link a {
-    color: #000;
-    text-decoration: none;
-}
-
-.register-link p {
-    color: white;
-}
-
-.register-link a:hover {
+  }
+  
+  .form-section button:hover {
+    background-color: #333;
+  }
+  
+  .form-section p {
+    text-align: center;
+    margin-top: 15px;
+  }
+  
+  .form-section a {
+    color: #fff;
     text-decoration: underline;
-}
-
-/* Responsive Design */
-@media screen and (max-width: 1024px) {
-    .wrapper {
-        width: 70%; /* Wider container for tablets and small desktops */
-        padding: 15px; /* Reduce padding for smaller screens */
+  }
+  
+  @media (max-width: 768px) {
+    .login-container {
+      flex-direction: column;
     }
-
-    .content-container {
-        flex-direction: column; /* Stack form and image vertically */
+  
+    .image-section {
+      order: 2;
+      padding: 20px;
     }
-
-    .form-box, .image-box {
-        width: 100%; /* Full width for both sections */
-        margin-bottom: 20px; /* Add space between stacked sections */
+  
+    .form-section {
+      order: 1;
     }
-
-    .image-box img {
-        max-width: 450px; /* Adjust max image size for medium screens */
-    }
-}
-
-@media screen and (max-width: 768px) {
-    .wrapper {
-        width: 80%; /* Container width for small screens */
-    }
-
-    .content-container {
-        flex-direction: column; /* Stack form and image vertically */
-        gap: 10px; /* Less gap between elements */
-    }
-
-    .form-box, .image-box {
-        width: 100%; /* Full width for both sections */
-        margin-bottom: 15px; /* Add space between sections */
-    }
-
-    .form-box {
-        padding: 30px; /* Reduce padding for smaller screens */
-    }
-
-    .image-box img {
-        max-width: 400px; /* Adjust image size for smaller screens */
-    }
-}
-
-@media screen and (max-width: 480px) {
-    .wrapper {
-        width: 90%; /* Narrower container for extra-small screens */
-        padding: 10px; /* Further reduce padding */
-    }
-
-    h1 {
-        font-size: 28px; /* Smaller font size for heading */
-    }
-
-    button {
-        font-size: 14px; /* Smaller button text */
-        height: 40px; /* Slightly smaller button height */
-    }
-
-    .input-box input {
-        font-size: 14px; /* Smaller input text */
-    }
-
-    .image-box img {
-        max-width: 300px; /* Adjust image size for very small screens */
-    }
-}
-
-@media screen and (max-width: 400px) {
-    h1 {
-        font-size: 24px; /* Further reduce font size for smaller screens */
-    }
-
-    button {
-        font-size: 12px; /* Even smaller button text */
-    }
-
-    .form-box {
-        padding: 20px; /* Further reduce padding */
-    }
-
-    .image-box img {
-        max-width: 250px; /* Make image smaller for the smallest screens */
-    }
-}
+  }
+  

@@ -1,119 +1,70 @@
-import React, { useState, useContext } from 'react';
-import '../styles/Login.css';
-import { FaUser, FaLock } from "react-icons/fa";
-import LoginImage from '../assets/login.jpg';
-import Footer from './Footer';
-
-import { useNavigate } from 'react-router-dom';
-import { AuthContext } from '../context/AuthContext';
-import { BASE_URL } from './../utils/config';
+import React, { useState, useContext } from "react";
+import { AuthContext } from "../context/AuthContext";
+import { useNavigate } from "react-router-dom";
+import "../styles/Login.css";
 
 const Login = () => {
-    // State for managing form inputs
-    const [credentials, setCredentials] = useState({
-        email: '',
-        password: '',
-    });
+  const [credentials, setCredentials] = useState({ email: "", password: "" });
+  const { dispatch } = useContext(AuthContext);
+  const navigate = useNavigate();
 
-    // AuthContext for managing authentication state
-    const { dispatch } = useContext(AuthContext);
-    const navigate = useNavigate();
+  const handleChange = (e) => {
+    setCredentials((prev) => ({ ...prev, [e.target.name]: e.target.value }));
+  };
 
-    // Handle input change dynamically
-    const handleChange = (e) => {
-        setCredentials((prev) => ({
-            ...prev,
-            [e.target.name]: e.target.value,
-        }));
-    };
+  const handleSubmit = async (e) => {
+    e.preventDefault();
+    try {
+      const res = await fetch("http://localhost:5000/api/v1/auth/login", {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify(credentials),
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.message);
 
-    // Handle form submission
-    const handleClick = async (e) => {
-        e.preventDefault();
+      dispatch({ type: "LOGIN_SUCCESS", payload: data.user });
+      navigate("/");
+    } catch (err) {
+      alert(err.message);
+    }
+  };
 
-        // Frontend validation
-        if (!credentials.email || !credentials.password) {
-            alert("All fields are required.");
-            return;
-        }
-
-        console.log("Submitted credentials:", credentials); // Debug log for form data
-
-        try {
-            const res = await fetch(`${BASE_URL}/auth/login`, {
-                method: 'POST',
-                headers: {
-                    'Content-Type': 'application/json',
-                },
-                credentials:'include',
-                body: JSON.stringify(credentials), // Send user data to the backend
-            });
-
-            const result = await res.json();
-
-            console.log("Server Response:", result); // Debug log for server response
-
-            if (!res.ok) {
-                alert(result.message); // Display error message from the backend
-            } else {
-                // Dispatch successful login action
-                dispatch({ type: 'LOGIN_SUCCESS', payload: result });
-
-                // Redirect to home page after success
-                navigate('/');
-            }
-        } catch (err) {
-            console.error("Error during login:", err); // Log errors for debugging
-            alert("Something went wrong. Please try again.");
-        }
-    };
-
-    return (
-        <div>
-            <div className="wrapper">
-                {/* Left side image */}
-                <div className="image-box">
-                    <img src={LoginImage} alt="Login Illustration" />
-                </div>
-
-                {/* Right side form */}
-                <div className="form-box">
-                    <form onSubmit={handleClick}>
-                        <h1>Login</h1>
-                        <div className="input-box">
-                            <input
-                                type="email"
-                                name="email"
-                                placeholder="Email"
-                                value={credentials.email}
-                                onChange={handleChange}
-                                required
-                            />
-                            <FaUser className="icon" />
-                        </div>
-                        <div className="input-box">
-                            <input
-                                type="password"
-                                name="password"
-                                placeholder="Password"
-                                value={credentials.password}
-                                onChange={handleChange}
-                                required
-                            />
-                            <FaLock className="icon" />
-                        </div>
-
-                        <button type="submit">Login</button>
-                        <div className="register-link">
-                            <p>Don't have an account? <a href="/register">Register</a></p>
-                        </div>
-                    </form>
-                </div>
-            </div>
-
-            <Footer />
+  return (
+    <div className="login-page">
+      <div className="login-container">
+        <div className="image-section">
+          <img
+            src="uploaded_image.png"
+            alt="Illustration"
+          />
         </div>
-    );
+        <div className="form-section">
+          <h2>Login</h2>
+          <form onSubmit={handleSubmit}>
+            <input
+              type="email"
+              name="email"
+              placeholder="Email"
+              onChange={handleChange}
+              required
+            />
+            <input
+              type="password"
+              name="password"
+              placeholder="Password"
+              onChange={handleChange}
+              required
+            />
+            <button type="submit">Login</button>
+          </form>
+          <p>
+            Don't have an account? <a href="/register">Create</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  );
 };
 
 export default Login;
