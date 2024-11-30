@@ -2,19 +2,19 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    padding: 40px;
+    padding: 30px;
     background-color: #f9f9f9;
   }
   
   .experience-content {
     display: flex;
-    max-width: 1200px;
+    max-width: 1000px;
     align-items: center;
   }
   
   .text-section {
     flex: 1;
-    padding: 20px;
+    padding: 5px;
   }
   
   .badge {
@@ -73,8 +73,8 @@
   
   .gallery img
   {
-    height: 400px;
-    width: 500px;
+    height: 200px;
+    width: 300px;
   }
   
   .location-tag {

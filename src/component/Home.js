@@ -1,17 +1,14 @@
 import React from 'react';
 import '../styles/Home.css';
-import Services from './Services';
 import image1 from '../assets/hero-img01.jpg';
 import image2 from '../assets/hero-img02.jpg';
-import image3 from '../assets/hero-img01.jpg';
-import TourHome from './TourHome';
+import vedio from '../assets/images/hero-video.mp4';
+import Search from './Search';
+import Services from './Services';
 import About from './About';
-import Experience from './Experience'
+import Experience from './Experience';
 import Footer from './Footer';
-import Subscription from './Subscribtion'
-import { FaSearch } from 'react-icons/fa'; // Import FaSearch
-import '@fortawesome/fontawesome-free/css/all.min.css';
-
+import Features from './FeaturedTourList';
 
 function Home() {
   return (
@@ -24,31 +21,21 @@ function Home() {
         </div>
         <div className="tour-images">
           <img src={image1} alt="Destination 1" />
-          <img src={image2} alt="Destination 2" />
-          <img src={image3} alt="Destination 3" />
+          <video src={vedio} controls />
+          <img className="img-2" src={image2} alt="Destination 2" />
         </div>
       </header>
-
-    {/* Search Bar Section */}
-    <div className="tour-search">
-      <div className="search-fields">
-        {['Location', 'Distance', 'Min People'].map((label, index) => (
-          <div className="search-field" key={index}>
-            <label>{label}</label>
-            <input type={label === 'Distance' || label === 'Min People' ? 'number' : 'text'} placeholder={label === 'Location' ? 'Where are you going?' : label === 'Distance' ? 'Distance (km)' : '1'} />
-          </div>
-        ))}
-        <button className="search-button">
-          <FaSearch />
-        </button>
-      </div>
-    </div>
-      <Services/>
-      <TourHome/>
-      <Experience/>
-      <About/>
-|<Subscription/>
-      <Footer/>
+      <Search />
+      <Services />
+      <Experience />
+      <section className="fea-container">
+        
+        <div className="fea">
+          <Features />
+        </div>
+      </section>
+      <About />
+      <Footer />
     </div>
   );
 }

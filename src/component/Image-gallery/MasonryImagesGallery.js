@@ -13,11 +13,13 @@ const MasonryImagesGallery = () => {
             key={index}
             alt={`Gallery ${index + 1}`} // Updated alt text
             style={{
-            width:"100%",
-              height: "250px", // Set fixed height for equal display
+            width:"95%",
+              height: "200px", // Set fixed height for equal display
               objectFit: "cover", // Ensure images maintain their aspect ratio and cover the area
               borderRadius: "10px",
               display: "block",
+             marginLeft:"5px",
+          
             
             }}
           />
