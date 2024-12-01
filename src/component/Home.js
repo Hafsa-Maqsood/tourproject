@@ -43,12 +43,12 @@ function Home() {
         </button>
       </div>
     </div>
-      <Services/>
-      <TourHome/>
-      <Experience/>
-      <About/>
-|<Subscription/>
-      <Footer/>
+    <Services/>
+    <Experience/>
+    <TourHome/>
+    <About/>
+    <Subscription/>
+    <Footer/>
     </div>
   );
 }

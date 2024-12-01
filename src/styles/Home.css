@@ -16,31 +16,27 @@
   }
   
   .header-text h1{
-    margin-left: 90px;
+    margin-right: 100px;
    color: #db721b;
     /* Limit the width of the text section */
   }
   .header-text h2{
-    margin-left: 90px;
+    margin-left: 0px;
    color: #db721b;
     /* Limit the width of the text section */
   }
-  .header-text p{
-    margin-left: 90px;
- 
-    /* Limit the width of the text section */
-  }
+  
   .tour-images {
     display: flex; /* Align images in a row */
     gap: 2px;
-    margin-left:100px;
+    margin-left:10px;
   
   }
   
   .tour-images img {
     max-width: 100%; /* Ensure images are responsive */
-    height: 500px; /* Maintain aspect ratio */
-    width: 300px; /* Set a fixed width for images */
+    height: 300px; /* Maintain aspect ratio */
+    width: 150px; /* Set a fixed width for images */
   }
   
   .search-fields {
@@ -68,7 +64,7 @@
     padding: 8px;
     border: 1px solid #ccc;
     border-radius: 5px;
-    width: 150px;
+    width: 100px;
   }
   
   .search-button {
