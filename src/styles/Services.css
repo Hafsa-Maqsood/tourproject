@@ -1,7 +1,9 @@
 .services {
+    
     flex: 1;
     display: flex;
     margin-top: 20px;
+   
     padding: 40px;
     text-align: center;
     justify-content: flex-start; /* Align items at the start of the container */
@@ -13,34 +15,36 @@ h2 {
     color: #db721b; /* Match theme color */
     margin-bottom: 20px;
     padding-top: 30px;
-    margin-left: -80px; /* Align the heading without additional left margin */
-    font-size: 24px; /* Adjust heading font size as needed */
+    margin-right: 0%;
+    margin-left: 30px; /* Align the heading without additional left margin */
+    font-size: 20px; /* Adjust heading font size as needed */
     flex-shrink: 0; /* Prevent the heading from shrinking */
 }
 
 .service-cards {
+  
   flex-direction: row;
-  margin-left: 10px;
+  margin-left: 2%;
     display: flex;
     justify-content: center; /* Center service cards */
-    gap: 5px; /* Space between cards */
+    gap: 3px; /* Space between cards */
     flex-wrap: wrap; /* Allow cards to wrap on smaller screens */
     flex: 1; /* Allow service cards to take up available space */
 }
 
 .service-card {
-   
+ 
     background-color: #fff;
     border: 1px solid #ddd;
     border-radius: 8px;
     padding: 10px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-    width: 200px;
+    width: 30%;
     transition: transform 0.2s;
     display: flex;
     align-items: center;
     justify-content: center; /* Center content inside the card */
-    height: 150px; /* Set a height for uniform cards */
+    height: 170px; /* Set a height for uniform cards */
 }
 
 .service-card:hover {

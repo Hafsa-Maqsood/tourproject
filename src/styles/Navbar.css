@@ -1,19 +1,23 @@
 .navStyle {
-    width: 100%;  /* Take the full width of the screen */
-    max-width: 100vw; /* Ensure it doesn't exceed the screen width */
-    top: 0px;
-  /* Removed the negative margin */
+    width: 100%; /* Full width */
+    max-width: 100vw; /* Prevent horizontal overflow */
+    position: fixed; /* Fix it to the top */
+    top: 0;
+    left: 0;
     padding: 10px;
     display: flex;
-    justify-content: space-between;  /* Distribute space between elements */
+    justify-content: space-between; /* Distribute items evenly */
+    align-items: center;
     height: 60px;
     z-index: 10;
     background-color: white;
     box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box; /* Ensure padding doesn’t affect the width calculation */
+    box-sizing: border-box; /* Padding doesn’t affect width */
 }
 
+/* Logo Styling */
 .navStyle .logo {
+    margin-left: 80px;
     display: flex;
     align-items: center;
 }
@@ -22,56 +26,86 @@
     height: 40px;
     width: auto;
 }
-
+.register-button
+{
+    margin-bottom: 10%;
+    height: 10%;
+}
+/* Navigation Links */
 .navStyle .nav-links {
     display: flex;
     margin-right: 100px;
     align-items: center;
-    gap: 100px; /* Use gap instead of large margin for spacing */
+    gap: 50px; /* Balanced spacing */
+    position: relative; /* Contain dropdown here */
 }
 
 .navStyle a {
     color: #000;
     text-decoration: none;
-    font-size: larger;
-    font-weight: bolder;
+    font-size: 18px; /* Standard font size */
+    font-weight: bold;
 }
 
 .navStyle a:hover {
     color: #d6661b;
 }
 
-/* Button Styles */
-.register-button {
+/* Profile Container */
+.profile-container {
+    position: relative; /* For dropdown positioning */
+}
+
+/* Profile Icon Styling */
+.profile-icon {
     background-color: #e67e39;
-    border: 2px solid #d6661b;
-    color: black;
+    color: white;
+    font-size: 18px;
     font-weight: bold;
-    margin-top: 10px;
-    padding: 10px;
-    border-radius: 5px;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
     cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.profile-icon:hover {
+    background-color: #d6661b;
+}
+
+/* Dropdown Menu Styling */
+.dropdown-menu {
+    position: absolute;
+    top: 50px; /* Below the profile icon */
+    right: 0; /* Align to the right of the container */
+    background-color: #ffffff;
+    border: 1px solid black;
+    border-radius: 5px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    z-index: 20;
+    width: 200px; /* Consistent width */
+}
+/* Dropdown Item Styling */
+.dropdown-item {
+    display: block;
+    padding: 8px 4px;
+    background-color: #ffffff; /* White background */
+    color: #000000; /* Black text */
+    text-align: left;
+    border: none;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    border-radius: 5px; /* Rounded corners */
     transition: background-color 0.3s ease, color 0.3s ease;
 }
 
-.register-button:hover {
-    background-color: #d6661b;
-    color: white;
-}
-
-/* Media Query for Smaller Screens */
-@media (max-width: 768px) {
-    .navStyle {
-        flex-direction: column;
-        align-items: flex-start;
-        padding: 10px;
-    }
-    .navStyle .nav-links {
-        flex-direction: column;
-        width: 100%;
-        gap: 5px;  /* Smaller gap for mobile view */
-    }
-    .navStyle a {
-        margin: 5px 0;
-    }
+/* Hover Effect for Dropdown Items */
+.dropdown-item:hover {
+    background-color: #d6661b; /* Orange hover background */
+    color: #ffffff; /* White text */
 }

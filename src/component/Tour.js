@@ -1,47 +1,70 @@
-import React from 'react';
-import { Link } from 'react-router-dom';
+import React, { useEffect, useState } from "react";
+import CommonSection from "./Section";  // Assuming the path is correct
+
+ // Assuming the path is correct
+import TourCard from "./TourCard";  // Assuming the path is correct
+import tours from "../assets/data/tours";  // Assuming correct import for tour data
+import Footer from "./Footer";  // Assuming correct path for Footer
+import { Container, Row, Col } from "reactstrap";
 import '../styles/Tour.css';
-import Footer from './Footer';
-import { FaSearch } from 'react-icons/fa';
-import TourHome from './TourHome'
-import Subscription from './Subscribtion';
-const tours = [
-  { id: 1, location: 'London', price: '$99', rating: 4.5, reviews: 2 },
-  { id: 2, location: 'Bali', price: '$99', rating: 5.0, reviews: 1 },
-  { id: 3, location: 'Bangkok', price: '$99', rating: 0, reviews: 0 },
-  { id: 4, location: 'Phuket', price: '$99', rating: 5.0, reviews: 2 },
-  { id: 5, location: 'Bali', price: '$99', rating: 0, reviews: 0 },
-  { id: 6, location: 'Tokyo', price: '$99', rating: 5.0, reviews: 1 },
-  { id: 7, location: 'Paris', price: '$99', rating: 4.0, reviews: 3 },
-  { id: 8, location: 'Sylhet', price: '$99', rating: 0, reviews: 0 },
-];
 
-const Tour = () => (
-  <div className="tour">
-    <div className="tour-header">
-      <h1 className="tour-title">All Tours</h1>
-    </div>
+const Tour = () => {
+  const itemsPerPage = 8;  // Number of tours per page
+  const [pageCount, setPageCount] = useState(0);  // Total number of pages
+  const [page, setPage] = useState(0);  // Current page
+  const [currentTours, setCurrentTours] = useState([]);  // Tours to display on the current page
 
-    {/* Search Bar Section */}
-    <div className="tour-search">
-      <div className="search-fields">
-        {['Location', 'Distance', 'Min People'].map((label, index) => (
-          <div className="search-field" key={index}>
-            <label>{label}</label>
-            <input type={label === 'Distance' || label === 'Min People' ? 'number' : 'text'} placeholder={label === 'Location' ? 'Where are you going?' : label === 'Distance' ? 'Distance (km)' : '1'} />
-          </div>
-        ))}
-        <button className="search-button">
-          <FaSearch />
-        </button>
-      </div>
-    </div>
+  useEffect(() => {
+    // Calculate the total number of pages based on the number of tours and items per page
+    const pages = Math.ceil(tours.length / itemsPerPage);
+    setPageCount(pages);
+  }, []);
 
-    {/* Tours List */}
-    <TourHome tours={tours} />
-    <Subscription/>
-    <Footer/>
-  </div>
-);
+  useEffect(() => {
+    // Slice the tour data based on the current page
+    const startIndex = page * itemsPerPage;
+    const endIndex = startIndex + itemsPerPage;
+    setCurrentTours(tours.slice(startIndex, endIndex));  // Get the tours for the current page
+  }, [page]);  // Re-run this effect whenever the page changes
+
+  return (
+    <>
+      <CommonSection title={"All Tours"} /> {/* Render the section with title */}
+      
+     
+      <section className="pt-0">
+        <Container>
+          <Row className="tour_cards_container"> {/* Apply the class here for layout */}
+            {currentTours.length > 0 ? (
+              currentTours.map(tour => (
+                <Col lg="3" className="tour-card mb-4" key={tour.id}>
+                  <TourCard tour={tour} />
+                </Col>
+              ))
+            ) : (
+              <p>No tours available.</p>
+            )}
+
+            <Col lg="12">
+              <div className="pagination d-flex align-items-center justify-content-center mt-4 gap-3">
+                {[...Array(pageCount).keys()].map(number => (
+                  <span
+                    key={number}
+                    onClick={() => setPage(number)}
+                    className={page === number ? "active_page" : ""}
+                  >
+                    {number + 1}
+                  </span>
+                ))}
+              </div>
+            </Col>
+          </Row>
+        </Container>
+      </section>
+
+      <Footer />
+    </>
+  );
+};
 
 export default Tour;

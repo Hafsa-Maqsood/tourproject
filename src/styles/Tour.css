@@ -1,81 +1,36 @@
+.pagination {
+  margin-top: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-left: 1500%;
+}
 
-  
-  .tour-header {
-   
-    height: 80vh;
-    background-size: cover;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    background-image: url('../assets/bg.jpg');
-    position: relative;
-  }
-  .tour-search {
-    margin: 20px 0 40px 0;
-    display: flex;
-    justify-content: center;
-  }
-  
-  .search-fields {
-    display: flex;
-    gap: 10px;
-    align-items: center;
-    background-color: white;
-    border-radius: 40px;
-    padding: 15px;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-  }
-  
-  .search-field {
-    display: flex;
-    flex-direction: column;
-  }
-  
-  .search-field label {
-    font-size: 14px;
-    margin-bottom: 5px;
-    color: gray;
-  }
-  
-  .search-field input {
-    padding: 8px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    width: 150px;
-  }
-  
-  .search-button {
-    background-color: orange;
-    border: none;
-    padding: 10px 20px;
-    color: white;
-    font-size: 16px;
-    cursor: pointer;
-    border-radius: 5px;
-  }
-  
-  .tour-list {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    max-width: 5000px;
-    margin-left: -200px;
-  }
-  
+.pagination span {
+  cursor: pointer;
+  padding: 8px 16px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  background-color: #f8f9fa;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
 
-  
+.pagination span:hover {
+  background-color: #007bff;
+  color: #fff;
+}
+
+.pagination .active_page {
+  background-color: #007bff;
+  color: white;
+  border: none;
+}
+
+  .search-area
+  {
+    margin-top: 5%;
+
+  }
  
-  
-
-  .tour-title {
-    font-size: 70px;
-    margin-bottom: 5px;
-    font-weight: bold;
-    color: white;
-  }
-  
- 
-
-  
-  
-  

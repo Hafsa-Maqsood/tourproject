@@ -4,7 +4,7 @@ import '@fortawesome/fontawesome-free/css/all.min.css'; // Import Font Awesome C
 
 const servicesData = [
   { id: 1, title: 'Calculate Weather', description: 'Get weather forecasts for your trip.', icon: 'fas fa-sun' },
-  { id: 2, title: 'Best Tour Guide', description: 'Find expert guides for every destination.', icon: 'fas fa-user-tie' },
+  { id: 2, title: ' Tour Guide', description: 'Find expert guides for every destination.', icon: 'fas fa-user-tie' },
   { id: 3, title: 'Customization', description: 'Personalize your travel experience.', icon: 'fas fa-cogs' },
 ];
 
