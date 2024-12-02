@@ -1,8 +1,8 @@
-import React, { useState, useContext } from 'react';  // Import useContext here
+import React, { useState, useContext } from 'react';  
 import { AuthContext } from "../context/AuthContext";
 import { FaUser, FaLock } from "react-icons/fa";
 import LoginImage from '../assets/login.jpg';
-import { useNavigate } from 'react-router-dom';  // Import useNavigate
+import { useNavigate } from 'react-router-dom';  
 import Footer from './Footer';
 import '../styles/Login.css';
 
@@ -10,6 +10,7 @@ const Login = () => {
     const [credentials, setCredentials] = useState({ email: '', password: '' });
     const navigate = useNavigate();  // Hook for navigation
     const { dispatch } = useContext(AuthContext);  // Now this will work
+
     const handleChange = (e) => {
         setCredentials((prev) => ({
             ...prev,
@@ -20,24 +21,33 @@ const Login = () => {
     const handleSubmit = async (e) => {
         e.preventDefault();
         try {
-            const res = await fetch("http://localhost:5000/api/v1/auth/login", {
+            const res = await fetch("http://localhost:5000/api/auth/login", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
                 body: JSON.stringify(credentials),
             });
-
+            
             const data = await res.json();
-
+    
             if (!res.ok) {
-                throw new Error(data.message);
+                throw new Error(data.message || 'Login failed');
             }
 
-            // If login is successful, navigate to the homepage
-            navigate("/");  // Redirect to home page
+            // Dispatch login success action with user data
+            dispatch({
+                type: 'LOGIN_SUCCESS',
+                payload: data.user,  // Assuming the API returns user data in the 'user' key
+            });
+
+            // Navigate to the Home page or wherever you want
+            navigate("/Home");
+
         } catch (err) {
-            alert(err.message);
+            console.error('Login error:', err);
+            alert(err.message || 'An unexpected error occurred');
         }
     };
+    
 
     return (
         <div>

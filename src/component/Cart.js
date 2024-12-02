@@ -2,6 +2,7 @@ import React, { useState, useEffect } from 'react';
 import '../styles/Cart.css';
 import { Button, ListGroup, ListGroupItem } from 'reactstrap';
 import { useNavigate } from 'react-router-dom';
+import Footer from './Footer';
 
 function Cart() {
     const [booking, setBooking] = useState(null);
@@ -13,15 +14,12 @@ function Cart() {
         // Fetch booking details from the backend
         const fetchBookingDetails = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/v1/bookings');
-                
+                const response = await fetch('http://localhost:5000/api/bookings');
                 if (!response.ok) {
-                    throw new Error('Failed to fetch booking data');
+                    throw new Error(`HTTP error! status: ${response.status}`);
                 }
-
                 const data = await response.json();
-                console.log('Booking data:', data); // Log the data to check if it is in the expected format
-
+                console.log('Booking data:', data); // Log the response data
                 if (data && data.booking) {
                     setBooking(data.booking);
                 } else {
@@ -32,7 +30,7 @@ function Cart() {
                 setError('Error fetching booking details. Please try again.');
             }
         };
-
+        
         fetchBookingDetails();
     }, []); // Empty dependency array means this effect runs once when the component mounts
 
@@ -42,13 +40,13 @@ function Cart() {
 
     const handleGoBackHome = () => {
         // Navigate back to the home page
-        navigate('/');
+        navigate('/Home');
     };
 
     const handleCancelBooking = async () => {
         try {
             // Make a DELETE request to cancel the booking
-            const response = await fetch(`http://localhost:5000/api/v1/bookings/${booking._id}`, {
+            const response = await fetch(`http://localhost:5000/api/bookings/${booking._id}`, {
                 method: 'DELETE',
             });
 
@@ -67,6 +65,7 @@ function Cart() {
     };
 
     return (
+        <div>  
         <div className="cart">
             <h2>Your Booking</h2>
 
@@ -114,16 +113,19 @@ function Cart() {
 
             {/* Cancel Booking Button */}
             {booking && (
-                <Button className="mt-3" onClick={handleCancelBooking} color="danger">
+              <Button className="Cancel" onClick={handleCancelBooking} color="danger">
                     Cancel Booking
                 </Button>
             )}
 
             {/* Go Back to Home Button */}
-            <Button className="mt-3" onClick={handleGoBackHome}>
+            <div>
+            <Button className="Go" onClick={handleGoBackHome}>
                 Go Back to Home
             </Button>
+            </div>
         </div>
+        <Footer/></div>
     );
 }
 

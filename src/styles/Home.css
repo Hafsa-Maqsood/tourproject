@@ -73,6 +73,7 @@
   display: flex;
   justify-content: center; /* Center the container */
   padding: 20px 0;
+  
 }
 
 .fea .tour_cards_container {
@@ -86,11 +87,13 @@
   margin-top: -30px;
   font-size: 40px;
   margin-right: 70%;
+ 
 }
 
 .fea .tour-card {
   flex: 1 1 calc(25% - 20px); /* 4 cards per row with a gap */
   box-sizing: border-box;
+
 }
 
 @media (max-width: 992px) {

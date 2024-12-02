@@ -11,7 +11,7 @@ const ForgotPassword = () => {
         e.preventDefault();
         try {
             // Use fetch to make the POST request
-            const response = await fetch('http://localhost:5000/api/v1/auth/reset-password', {
+            const response = await fetch('http://localhost:5000/api/auth/reset-password', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json',

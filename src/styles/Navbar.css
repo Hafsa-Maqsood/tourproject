@@ -51,61 +51,22 @@
     color: #d6661b;
 }
 
-/* Profile Container */
-.profile-container {
-    position: relative; /* For dropdown positioning */
-}
 
-/* Profile Icon Styling */
-.profile-icon {
-    background-color: #e67e39;
+/* Style for "My Ticket" button */
+.my-ticket-button {
+    background-color: #4CAF50; /* Same green as Register button */
     color: white;
-    font-size: 18px;
-    font-weight: bold;
-    border-radius: 50%;
-    width: 40px;
-    height: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s ease;
 }
 
-.profile-icon:hover {
-    background-color: #d6661b;
-}
-
-/* Dropdown Menu Styling */
-.dropdown-menu {
-    position: absolute;
-    top: 50px; /* Below the profile icon */
-    right: 0; /* Align to the right of the container */
-    background-color: #ffffff;
-    border: 1px solid black;
-    border-radius: 5px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-    padding: 10px;
-    z-index: 20;
-    width: 200px; /* Consistent width */
-}
-/* Dropdown Item Styling */
-.dropdown-item {
-    display: block;
-    padding: 8px 4px;
-    background-color: #ffffff; /* White background */
-    color: #000000; /* Black text */
-    text-align: left;
-    border: none;
-    font-size: 16px;
-    font-weight: bold;
-    cursor: pointer;
-    border-radius: 5px; /* Rounded corners */
-    transition: background-color 0.3s ease, color 0.3s ease;
-}
-
-/* Hover Effect for Dropdown Items */
-.dropdown-item:hover {
-    background-color: #d6661b; /* Orange hover background */
-    color: #ffffff; /* White text */
+.my-ticket-button:hover {
+    background-color: #45a049; /* Darker shade when hovered */
 }

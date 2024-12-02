@@ -3,15 +3,13 @@
     padding: 2rem;
     border-radius: 0.5rem;
     border: 1px solid white;
-    position: sticky;
-    top: 80px;
-    background-color: #fff;
-    width: 100%;
-    max-width: 400px;
-   margin-right: 0px;
-  
-
    
+    position: sticky;
+    top: 120px;
+    background-color: #fff;
+    width: 80%;
+    max-width: 400px;
+    margin: 10px auto; /* Adjust to center and avoid overlap */
 }
 
 .booking__top {
@@ -37,14 +35,15 @@
 .tour_rating {
     display: flex;
     align-items: center; /* Align the star icon and text */
-    gap: 5px; /* Space between the star icon and rating text */
+    gap: 2px; /* Space between the star icon and rating text */
     font-size: 1rem;
     font-weight: 500;
     color: var(--text-color);
+ 
 }
 
 .tour_rating i {
-   margin-right: -10%;
+   margin-right: 10%;
     color: #ff7a00; /* Star icon color */
     font-size: 1.2rem; /* Adjust icon size */
 }
@@ -52,11 +51,14 @@
 
 /* Form Styling */
 .booking__form {
-    padding-top: 2rem;
+    padding-top: 0rem;
     background-color: #f9f9f9;
     border-radius: 8px;
     box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
     margin-bottom: 2rem;
+    margin-left: -10px;
+    
+ 
 }
 
 .booking__form h5 {
@@ -75,7 +77,8 @@
 /* Input Fields */
 .booking__form input {
     width: 90%;
-    margin-right: 20px;
+    margin-right: 10px;
+ 
     padding: 12px 16px;
     border-radius: 10px;
     font-size: 1rem;
@@ -97,6 +100,7 @@
 
 .booking__info-form {
     padding: 1rem;
+ 
 }
 
 /* Flexbox layout for input fields */
@@ -124,7 +128,7 @@
 /* Bottom part with service charges and total */
 .booking__bottom {
     width: 100%;
-    
+  
     padding-top: 2rem;
     background-color: #fff;
     border-radius: 8px;

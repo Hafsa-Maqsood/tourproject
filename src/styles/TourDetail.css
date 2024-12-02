@@ -2,7 +2,7 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  margin-top: 2rem;
+  margin-top: 5rem;
   margin-left: 2%;
 }
 
@@ -82,7 +82,7 @@
 }
 
 .rating__group {
-  margin-right: 100%;
+
   display: flex; /* Set flexbox for horizontal alignment */
   align-items: center; /* Align items vertically in the center */
   gap: 0.5rem; /* Add spacing between the stars */
@@ -189,7 +189,7 @@
   margin: 0; /* Remove default margin */
 }
 .rating{
-  margin-left: 300%;
+  margin-left: 250%;
 }
 
 .review_item p {
